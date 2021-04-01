@@ -1,0 +1,22 @@
+header.header
+        .container-xl
+          .header__inner
+            .menu
+              .menu__item
+            a.header__logo(href="#!") expice
+            .header__seperater
+              .close-menu &times;
+              .header__nav
+                -var navlist = ['Menu One', 'Menu Two', 'Menu Three', 'Menu Four'];
+                  ul.header__nav-list
+                    each link in navlist
+                      li.header__nav-item 
+                        a.header__nav-link(href="#!")=link
+              .header__user-wrapper
+                .header__user
+                  .header__user-dot
+                  i.header__user-icon.fas.fa-user
+                span.header__user-text User
+                i.header__arrow-down.far.fa-angle-down
+                .header__change-color
+                  .header__change-handle
